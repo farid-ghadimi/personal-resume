@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Farid Ghadimi </title> 
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+           box-sizing: border-box;
+         }
+         .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .placeholder {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: salmon;
+            padding: 10px;
+            text-align: center;
+        }
+        header a{
+            text-decoration: none;
+        }
+        body {background-color: navajowhite;
+        font-family: Oswald, Arial;
+        }
+        h1{font-family: "libre bakerville";}
+        button{
+        background-color: rgb(250, 139, 126);
+        border-radius: 5px;
+        padding: 3px;
+        margin: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        }
+        input{
+            background:salmon;
+            opacity: 60%;
+        }
+        img{
+            border-radius: 12px;
+        }
+    </style>   
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="placeholder">Logo</div>
+    <h1 style="font-size:250%; border: thick dotted salmon; padding: 5px; margin: 0 25px; text-align: center;">Farid Ghadimi</h1>
+    <h2 style="text-align: center;">Welcome To My Website</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+</header>
+
+<section style="margin-left: 25px;">
+ <h2 id="About" style="text-decoration: wavy underline salmon;">About Me:</h2>
+ <p>My name is Farid Ghadimi and I am one hell of a front-end developer.</p>
+ <img src="Images/IMG_3108.JPG" alt="F3ri's pic" width="200" height="300">
+</section>
+
+<section style="margin-left: 25px;">
+    <h2 style="text-decoration: wavy underline salmon;">Skills:</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PYTHON</li>
+    </ul>
+</section>
+
+<section style="margin-left: 25px;">
+    <h2 id="Contact" style="text-decoration: wavy underline salmon;">Contact:</h2>
+    <form action="/action_page.php">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="Message">Message:</label><br>
+        <input type="text" id="Message" name="Message"><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <a href="mailto:f3ri.f3nix@gmail.com" style="margin-left: 25px;">Gmail</a>
+    <p>&copy; 2024 Farid Ghadimi.</p>
+</footer>
+</div>
+</body>
+</html>
