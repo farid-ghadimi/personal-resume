@@ -24,28 +24,69 @@
             padding: 10px;
             text-align: center;
         }
-        body {background-color: navajowhite;
+        body {
+        background-color: navajowhite;
         font-family: Oswald, Arial;
         }
-        h1{font-family: "libre bakerville";}
+        h1{
+        font-family: "libre bakerville";
+        }
         button{
         background-color: rgb(250, 139, 126);
         border-radius: 5px;
         padding: 3px;
-        margin: 5px;
+        margin-top: 10px;
         cursor: pointer;
         font-weight: bold;
         }
         input{
             background:salmon;
             opacity: 60%;
+            border-radius: 7px;
         }
-        img{
+        section img{
             border-radius: 12px;
+        }
+        section.about{
+        border: solid salmon;
+        border-radius: 7px;
+        padding: 10px;
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        }
+        section.about p{
+        padding: 8px;
+        max-width: 100%;
+        word-wrap: break-word;
+        }
+        section.Skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        }
+        section.Skills ul{
+        background: salmon;
+        border-radius: 8px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 33%;
+        text-align: center;
+        }
+        section.Skills .icon{
+        width: 100px;
+        height: 100px;
+        max-width: 100%;
+        height: auto;
         }
         nav{
             background-color: salmon;
             height: 50px;
+            border-radius: 15px;
         }
         nav ul li {
             display: inline-block;
@@ -57,13 +98,16 @@
             text-decoration: none;
             position: relative;
         }
+        nav ul li a:visited{
+            color: navajowhite;
+        }
         nav ul li a:before {
         content: "";
         display: block;
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: navajowhite;
+        background-color: #ffdead;
         position: absolute;
         top: 50%;
         left: 100%;
@@ -74,13 +118,51 @@
         nav ul li a:hover:before{
             opacity: 1;
         }
+        footer {
+        background-color: salmon;
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 15px 0px 0px 0px;
+        }
+        footer p{
+            text-align: center;
+            color: navajowhite;
+        }
+        footer a {
+            color: navajowhite;
+            text-decoration: none;
+            position: relative;
+        }
+        footer a:before{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: navajowhite;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-30%) translateX(55%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        }
+        footer a:hover:before{
+            opacity: 1;
+        }
+        footer .icon{
+            width: 20px;
+            height: 20px;
+            margin: 5px 0px 0px 15px;
+        }
+
     </style>   
 </head>
 <body>
 <div class="container">
 <header>
     <div class="placeholder">Logo</div>
-    <h1 style="font-size:250%; border: thick dotted salmon; padding: 5px; margin: 0 25px; text-align: center;">Farid Ghadimi</h1>
+    <h1 style="font-size:250%; border: thick dotted salmon; border-radius: 12px; padding: 5px; margin: 0 25px; text-align: center; background-color: salmon; color: navajowhite;">Farid Ghadimi</h1>
     <h2 style="text-align: center;">Welcome To My Website</h2>
       <nav>
         <ul>
@@ -91,18 +173,28 @@
       </nav>
 </header>
 
-<section style="margin-left: 25px;">
- <h2 id="About" style="text-decoration: wavy underline salmon;">About Me:</h2>
- <p>My name is Farid Ghadimi and I am one hell of a front-end developer.</p>
- <img src="Images/IMG_3108.JPG" alt="F3ri's pic" width="200" height="300">
+<section class="about">
+ <img src="Images/IMG_3108.png" alt="F3ri's pic" width="180" height="236">
+ <h2 id="About" style="text-decoration: wavy underline salmon; padding-left: 10px;">About Me:</h2>
+ <p>My name is Farid Ghadimi and I am one hell of a front-end developer.
+    i am learning my coding skills with the help of my dear mentor arezou.
+    i don't know what to add but i want to fill this section and i also don't want to add a textholder now.
+ </p>
 </section>
 
-<section style="margin-left: 25px;">
-    <h2 style="text-decoration: wavy underline salmon;">Skills:</h2>
+<h2 style="text-decoration: wavy underline salmon;text-align: center;">Skills</h2>
+<section class="Skills">
     <ul>
         <li>HTML</li>
+        <img src="Images/pngegg.png" class="icon">
+    </ul>
+    <ul>
         <li>CSS</li>
+        <img src="Images/pngegg (1).png" class="icon">
+    </ul>
+    <ul>
         <li>PYTHON</li>
+        <img src="Images/pngwing.com.png" class="icon">
     </ul>
 </section>
 
@@ -120,7 +212,10 @@
 </section>
 
 <footer>
-    <a href="mailto:f3ri.f3nix@gmail.com" style="margin-left: 25px;">Gmail</a>
+    <img src="Images/Background copy.png" class="icon">
+    <a href="mailto:f3ri.f3nix@gmail.com" style="margin-left: 5px;">Gmail</a>
+    <img src="Images/7f7b872e56430e68d69538b17525c51c.png" class="icon">
+    <a href="https://www.instagram.com/justsomemovieshots/?hl=en" style="margin-left: 5px;">Instagram</a>
     <p>&copy; 2024 Farid Ghadimi.</p>
 </footer>
 </div>
