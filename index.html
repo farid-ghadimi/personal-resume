@@ -16,23 +16,15 @@
             flex-wrap: wrap;
             flex-direction: column;
         }
-        .placeholder {
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: salmon;
-            padding: 10px;
-            text-align: center;
-        }
         body {
-        background-color: navajowhite;
+        background-color: rgb(255, 255, 255);
         font-family: Oswald, Arial;
         }
         h1{
         font-family: "libre bakerville";
         }
         button{
-        background-color: rgb(250, 139, 126);
+        background-color: rgb(81, 135, 252);
         border-radius: 5px;
         padding: 3px;
         margin-top: 10px;
@@ -40,7 +32,7 @@
         font-weight: bold;
         }
         input{
-            background:salmon;
+            background:rgb(78, 154, 253);
             opacity: 60%;
             border-radius: 7px;
         }
@@ -48,7 +40,7 @@
             border-radius: 12px;
         }
         section.about{
-        border: solid salmon;
+        border: solid rgb(78, 154, 253);
         border-radius: 7px;
         padding: 10px;
         margin: 8px;
@@ -69,7 +61,7 @@
         width: 100%;
         }
         section.Skills ul{
-        background: salmon;
+        background: rgb(78, 154, 253);
         border-radius: 8px;
         list-style-type: none;
         padding: 0;
@@ -84,7 +76,7 @@
         height: auto;
         }
         nav{
-            background-color: salmon;
+            background-color: rgb(78, 154, 253);
             height: 50px;
             border-radius: 15px;
         }
@@ -97,9 +89,10 @@
         nav ul li a{
             text-decoration: none;
             position: relative;
+            color: #ffffff;
         }
         nav ul li a:visited{
-            color: navajowhite;
+            color: rgb(255, 255, 255);
         }
         nav ul li a:before {
         content: "";
@@ -107,7 +100,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #ffdead;
+        background-color: #ffffff;
         position: absolute;
         top: 50%;
         left: 100%;
@@ -119,17 +112,17 @@
             opacity: 1;
         }
         footer {
-        background-color: salmon;
+        background-color: rgb(78, 154, 253);
         margin-top: 20px;
         border-radius: 20px;
         padding: 15px 0px 0px 0px;
         }
         footer p{
             text-align: center;
-            color: navajowhite;
+            color: rgb(32, 32, 32);
         }
         footer a {
-            color: navajowhite;
+            color: rgb(44, 44, 44);
             text-decoration: none;
             position: relative;
         }
@@ -139,7 +132,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: navajowhite;
+        background-color: rgb(44, 44, 44);
         position: absolute;
         top: 50%;
         left: 100%;
@@ -161,28 +154,27 @@
 <body>
 <div class="container">
 <header>
-    <div class="placeholder">Logo</div>
-    <h1 style="font-size:250%; border: thick dotted salmon; border-radius: 12px; padding: 5px; margin: 0 25px; text-align: center; background-color: salmon; color: navajowhite;">Farid Ghadimi</h1>
-    <h2 style="text-align: center;">Welcome To My Website</h2>
-      <nav>
+    <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
-      </nav>
+    </nav>
+    <h1 style="font-size:250%; border-radius: 12px; padding: 15px; margin: 10 25px; text-align: center; background-color: rgb(78, 154, 253); color: rgb(255, 255, 255);">Farid Ghadimi</h1>
+    <h2 style="text-align: center;">Welcome To My Website</h2>
 </header>
 
 <section class="about">
  <img src="Images/IMG_3108.png" alt="F3ri's pic" width="180" height="236">
- <h2 id="About" style="text-decoration: wavy underline salmon; padding-left: 10px;">About Me:</h2>
+ <h2 id="About" style="text-decoration: wavy underline rgb(78, 154, 253); padding-left: 10px;">About Me:</h2>
  <p>My name is Farid Ghadimi and I am one hell of a front-end developer.
     i am learning my coding skills with the help of my dear mentor arezou.
     i don't know what to add but i want to fill this section and i also don't want to add a textholder now.
  </p>
 </section>
 
-<h2 style="text-decoration: wavy underline salmon;text-align: center;">Skills</h2>
+<h2 style="text-decoration: wavy underline rgb(78, 154, 253);text-align: center;">Skills</h2>
 <section class="Skills">
     <ul>
         <li>HTML</li>
@@ -199,7 +191,7 @@
 </section>
 
 <section style="margin-left: 25px;">
-    <h2 id="Contact" style="text-decoration: wavy underline salmon;">Contact:</h2>
+    <h2 id="Contact" style="text-decoration: wavy underline rgb(78, 154, 253);">Contact:</h2>
     <form action="/action_page.php">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br>
@@ -217,7 +209,7 @@
     <img src="Images/7f7b872e56430e68d69538b17525c51c.png" class="icon">
     <a href="https://www.instagram.com/justsomemovieshots/?hl=en" style="margin-left: 5px;">Instagram</a>
     <p>&copy; 2024 Farid Ghadimi.</p>
-    
+
 </footer>
 </div>
 </body>
