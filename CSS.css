@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root {
   --header-height: 50px;
-  --first-color: salmon;
+  --first-color: #fa8072;
   --second-color: rgb(29, 47, 56);
   --body-font: "DM Sans";
   --big-font-size: 30px;
