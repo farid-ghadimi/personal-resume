@@ -342,7 +342,7 @@ img {
     align-items: center;
   }
   .skills__container {
-    grid-template-columns: 0.7fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     column-gap: 8px;
   }
